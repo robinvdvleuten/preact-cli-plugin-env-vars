@@ -1,0 +1,42 @@
+{
+  "name": "preact-cli-plugin-env-vars",
+  "version": "1.0.0",
+  "description": "Consume variables in your environment with the Preact CLI",
+  "license": "MIT",
+  "author": "Robin van der Vleuten <robin@webstronauts.co>",
+  "main": "lib/index.js",
+  "keywords": [
+    "preact",
+    "plugin",
+    "env"
+  ],
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "xo"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": true,
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinvdvleuten/preact-cli-plugin-env-vars.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robinvdvleuten/preact-cli-plugin-env-vars/issues"
+  },
+  "homepage": "https://github.com/robinvdvleuten/preact-cli-plugin-env-vars#readme",
+  "devDependencies": {
+    "webpack": "^2.3.3",
+    "xo": "^0.18.2"
+  }
+}
