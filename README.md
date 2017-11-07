@@ -35,6 +35,17 @@ console.log(process.env.PREACT_APP_SECRET_CODE);
 
 The environment variables are embedded during the build time.
 
+### Adding development Environment Variables in `.env`
+
+To define permanent environment variables, create a file called `.env` in the root of your project:
+
+```
+PREACT_APP_SECRET_CODE=abcdef
+```
+
+These variables will act as the defaults if the machine does not explicitly set them.
+Please refer to the [dotenv documentation](https://github.com/motdotla/dotenv) for more details.
+
 ## License
 
 MIT © [Robin van der Vleuten](https://www.robinvdvleuten.nl)
