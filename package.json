@@ -4,7 +4,7 @@
   "description": "Consume variables in your environment with the Preact CLI",
   "license": "MIT",
   "author": "Robin van der Vleuten <robin@webstronauts.co>",
-  "main": "lib/index.js",
+  "main": "index.js",
   "keywords": [
     "preact",
     "plugin",
@@ -27,14 +27,14 @@
       ]
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/robinvdvleuten/preact-cli-plugin-env-vars.git"
-  },
+  "repository": "robinvdvleuten/preact-cli-plugin-env-vars",
   "bugs": {
     "url": "https://github.com/robinvdvleuten/preact-cli-plugin-env-vars/issues"
   },
   "homepage": "https://github.com/robinvdvleuten/preact-cli-plugin-env-vars#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  },
   "devDependencies": {
     "webpack": "^2.3.3",
     "xo": "^0.18.2"

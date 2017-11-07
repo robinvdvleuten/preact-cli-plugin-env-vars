@@ -1,10 +1,10 @@
-const webpack = require('webpack');
+require('dotenv').config();
 
-const PREACT_APP = /^PREACT_APP_/i;
+const { DefinePlugin } = require('webpack');
 
 const getEnvVars = () => {
   const raw = Object.keys(process.env)
-    .filter(key => PREACT_APP.test(key))
+    .filter(key => /^PREACT_APP_/i.test(key))
     .reduce(
       (env, key) => Object.assign(env, { [key]: process.env[key] }),
       {}
@@ -22,5 +22,5 @@ const getEnvVars = () => {
 
 module.exports = config => {
   const env = getEnvVars();
-  config.plugins.push(new webpack.DefinePlugin(env.stringified));
+  config.plugins.push(new DefinePlugin(env.stringified));
 };

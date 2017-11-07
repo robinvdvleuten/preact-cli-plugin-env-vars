@@ -8,13 +8,11 @@ Consume variables in your environment with the Preact CLI.
 ## Installation
 
 ```
-$ yarn add preact-cli-plugin-env-vars --dev
-```
-
-Alternatively using npm:
-
-```
 $ npm i preact-cli-plugin-env-vars --save-dev
+
+or
+
+$ yarn add preact-cli-plugin-env-vars --dev
 ```
 
 And include in your project by creating a `preact.config.js`:
@@ -32,7 +30,7 @@ export default function (config) {
 The plugin allows to use any environment variables prefixed with `PREACT_APP_` to be used within your script:
 
 ```js
-console.log(process.env.PREACT\_APP\_SECRET_CODE);
+console.log(process.env.PREACT_APP_SECRET_CODE);
 ```
 
 The environment variables are embedded during the build time.
